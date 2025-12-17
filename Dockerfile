@@ -29,4 +29,4 @@ ENV FLASK_RUN_HOST=0.0.0.0
 EXPOSE 5000
 
 # Run your startup script
-CMD ["bash", "./start_container.sh"]
+CMD ["bash", "start_container.sh"]
