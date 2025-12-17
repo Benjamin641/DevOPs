@@ -1,32 +1,16 @@
-# Use official Python 3.12 image
 FROM python:3.12-slim
 
-# Set working directory inside container
 WORKDIR /app
 
-# Install bash (python:3.12-slim does NOT include bash)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     bash \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements file first (for caching layers)
 COPY requirements.txt .
-
-# Install python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of your project into the container
 COPY . .
 
-# Ensure startup script is executable
-RUN chmod +x ./start_container.sh
-
-# Environment variables for Flask
-ENV FLASK_APP=flaskr/app.py
-ENV FLASK_RUN_HOST=0.0.0.0
-
-# Expose Flask port
 EXPOSE 5000
 
-# Run your startup script
-CMD ["bash", "start_container.sh"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
