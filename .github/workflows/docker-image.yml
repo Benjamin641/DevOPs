@@ -50,11 +50,12 @@ jobs:
             sleep 5
           done
 
-      - name: Run OWASP ZAP DAST scan
+      - name: Run OWASP ZAP DAST scan (Fail on HIGH)
         uses: zaproxy/action-baseline@v0.11.0
         with:
           target: 'http://localhost:5000'
-          fail_action: false
+          fail_action: true
+          rules_file_name: '.zap/rules.tsv'
 
       - name: Stop application
         run: docker compose down
