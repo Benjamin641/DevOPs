@@ -59,3 +59,22 @@ jobs:
 
       - name: Stop application
         run: docker compose down
+
+  container-scan:
+    name: Container Security Scan (Trivy)
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t flask-app:latest .
+
+      - name: Scan image with Trivy (Fail on HIGH/CRITICAL)
+        uses: aquasecurity/trivy-action@v0.24.0
+        with:
+          image-ref: flask-app:latest
+          severity: HIGH,CRITICAL
+          exit-code: 1
