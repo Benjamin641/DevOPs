@@ -1,0 +1,77 @@
+2025-12-18 16:37:23,785 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:37:23,795 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:37:29,786 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\app.py', reloading
+2025-12-18 16:37:31,699 [INFO] root: Flask application starting
+2025-12-18 16:37:31,785 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:37:31,793 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:37:57,746 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\accounts\\views.py', reloading
+2025-12-18 16:37:59,755 [INFO] root: Flask application starting
+2025-12-18 16:37:59,843 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:37:59,852 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:38:32,429 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\accounts\\views.py', reloading
+2025-12-18 16:38:34,628 [INFO] root: Flask application starting
+2025-12-18 16:38:34,707 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:38:34,716 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:38:50,856 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\accounts\\views.py', reloading
+2025-12-18 16:38:52,921 [INFO] root: Flask application starting
+2025-12-18 16:38:53,010 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:38:53,018 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:39:05,844 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\accounts\\views.py', reloading
+2025-12-18 16:39:07,806 [INFO] root: Flask application starting
+2025-12-18 16:39:07,884 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:39:07,892 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:39:31,177 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\accounts\\views.py', reloading
+2025-12-18 16:39:33,158 [INFO] root: Flask application starting
+2025-12-18 16:39:33,237 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:39:33,246 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:39:59,935 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\accounts\\views.py', reloading
+2025-12-18 16:40:01,987 [INFO] root: Flask application starting
+2025-12-18 16:40:02,077 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:40:02,085 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:41:39,668 [INFO] root: Flask application starting
+2025-12-18 16:41:39,779 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.70.24.134:5000
+2025-12-18 16:41:39,779 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-18 16:41:39,785 [INFO] werkzeug:  * Restarting with stat
+2025-12-18 16:41:41,641 [INFO] root: Flask application starting
+2025-12-18 16:41:41,730 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:41:41,739 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 16:41:41,962 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:41] "GET / HTTP/1.1" 200 -
+2025-12-18 16:41:43,622 [INFO] accounts.views: Registration page accessed
+2025-12-18 16:41:43,659 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:43] "GET /registration HTTP/1.1" 200 -
+2025-12-18 16:41:46,996 [INFO] accounts.views: login page accessed
+2025-12-18 16:41:47,020 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:47] "GET /login HTTP/1.1" 200 -
+2025-12-18 16:41:48,509 [INFO] accounts.views: Registration page accessed
+2025-12-18 16:41:48,514 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:48] "GET /registration HTTP/1.1" 200 -
+2025-12-18 16:41:50,596 [INFO] accounts.views: login page accessed
+2025-12-18 16:41:50,600 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:50] "GET /login HTTP/1.1" 200 -
+2025-12-18 16:41:51,076 [INFO] accounts.views: Account page accessed
+2025-12-18 16:41:51,100 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:51] "GET /account HTTP/1.1" 200 -
+2025-12-18 16:41:51,572 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:51] "GET /posts HTTP/1.1" 200 -
+2025-12-18 16:41:51,988 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:51] "GET /create HTTP/1.1" 200 -
+2025-12-18 16:41:52,604 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:52] "GET /security HTTP/1.1" 200 -
+2025-12-18 16:41:53,646 [INFO] accounts.views: Registration page accessed
+2025-12-18 16:41:53,651 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:41:53] "GET /registration HTTP/1.1" 200 -
+2025-12-18 16:45:27,245 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:27] "GET / HTTP/1.1" 200 -
+2025-12-18 16:45:28,741 [INFO] accounts.views: Registration page accessed
+2025-12-18 16:45:28,779 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:28] "GET /registration HTTP/1.1" 200 -
+2025-12-18 16:45:29,790 [INFO] accounts.views: login page accessed
+2025-12-18 16:45:29,795 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:29] "GET /login HTTP/1.1" 200 -
+2025-12-18 16:45:30,558 [INFO] accounts.views: Account page accessed
+2025-12-18 16:45:30,563 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:30] "GET /account HTTP/1.1" 200 -
+2025-12-18 16:45:31,073 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:31] "GET /posts HTTP/1.1" 200 -
+2025-12-18 16:45:31,481 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:31] "GET /create HTTP/1.1" 200 -
+2025-12-18 16:45:32,104 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:32] "GET /security HTTP/1.1" 200 -
+2025-12-18 16:45:33,209 [INFO] werkzeug: 127.0.0.1 - - [18/Dec/2025 16:45:33] "GET / HTTP/1.1" 200 -
+2025-12-18 16:48:12,251 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\security\\views.py', reloading
+2025-12-18 16:48:12,413 [INFO] werkzeug:  * Restarting with stat
+2025-12-18 16:48:14,730 [INFO] root: Flask application starting
+2025-12-18 16:48:14,811 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 16:48:14,821 [INFO] werkzeug:  * Debugger PIN: 121-487-885
+2025-12-18 17:02:00,320 [INFO] werkzeug:  * Detected change in 'H:\\PyCharmProjects\\DevOPs2\\tests\\conftest.py', reloading
+2025-12-18 17:02:00,504 [INFO] werkzeug:  * Restarting with stat
+2025-12-18 17:02:07,172 [INFO] root: Flask application starting
+2025-12-18 17:02:07,261 [WARNING] werkzeug:  * Debugger is active!
+2025-12-18 17:02:07,271 [INFO] werkzeug:  * Debugger PIN: 121-487-885
