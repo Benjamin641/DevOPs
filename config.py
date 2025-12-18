@@ -1,4 +1,9 @@
+
 SQLALCHEMY_DATABASE_URI = "sqlite:///blog.db"
 SQLALCHEMY_ECHO = True
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SECRET_KEY = "dev"
+
+
+
+

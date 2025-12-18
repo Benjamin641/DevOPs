@@ -1,6 +1,85 @@
 {% extends "base.html" %}
 
 {% block content %}
-<H1>Registration</H1>
+<div class="container">
+    <h1>Registration</h1>
 
+    <div class="p-2 row">
+        <div class="col-3"></div>
+
+        <div class="col-6">
+            <p>Please complete the following form to register an account to use the CSC2031 Blog.</p>
+
+            <form method="POST">
+                {{ form.hidden_tag() }}
+
+                <div class="p-3 bg-light border border-primary">
+
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }} alert-dismissible fade show mt-3" role="alert">
+                                {{ message }}
+                                Go to <a href="{{ url_for('accounts.login') }}">login page</a>.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        {% endfor %}
+                    {% endwith %}
+
+                    <div class="form-group mb-2">
+                        {{ form.email.label }} <span class="text-danger">*</span>
+                        {{ form.email(class="form-control") }}
+                        {% for error in form.email.errors %}
+                            <small class="text-danger">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group mb-2">
+                        {{ form.firstname.label }} <span class="text-danger">*</span>
+                        {{ form.firstname(class="form-control") }}
+                        {% for error in form.firstname.errors %}
+                            <small class="text-danger">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group mb-2">
+                        {{ form.lastname.label }} <span class="text-danger">*</span>
+                        {{ form.lastname(class="form-control") }}
+                        {% for error in form.lastname.errors %}
+                            <small class="text-danger">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group mb-2">
+                        {{ form.phone.label }} <span class="text-danger">*</span>
+                        {{ form.phone(class="form-control") }}
+                        {% for error in form.phone.errors %}
+                            <small class="text-danger">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group mb-2">
+                        {{ form.password.label }} <span class="text-danger">*</span>
+                        {{ form.password(class="form-control") }}
+                        {% for error in form.password.errors %}
+                            <small class="text-danger">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group mb-3">
+                        {{ form.confirm_password.label }} <span class="text-danger">*</span>
+                        {{ form.confirm_password(class="form-control") }}
+                        {% for error in form.confirm_password.errors %}
+                            <small class="text-danger">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+
+                    {{ form.submit(class="btn btn-success w-100") }}
+
+                </div>
+            </form>
+        </div>
+
+        <div class="col-3"></div>
+    </div>
+</div>
 {% endblock %}

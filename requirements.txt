@@ -2,12 +2,11 @@ Flask~=3.1.0
 click
 itsdangerous
 Jinja2
-MarkupSafe
-Werkzeug
-Flask-Login
+
+
 Flask-Migrate
-Flask-Script
+
 Flask-SQLAlchemy
 Flask-WTF
-Flask-Admin
+
 WTForms
