@@ -72,9 +72,10 @@ jobs:
       - name: Build Docker image
         run: docker build -t flask-app:latest .
 
-      - name: Scan image with Trivy (Fail on HIGH/CRITICAL)
-        uses: aquasecurity/trivy-action@v0
+      - name: Scan image with Trivy
+        uses: aquasecurity/trivy-action@master
         with:
-          image-ref: flask-app:latest
+          image-ref: flask-app
+          format: table
           severity: HIGH,CRITICAL
           exit-code: 1
